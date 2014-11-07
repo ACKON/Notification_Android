@@ -1,15 +1,15 @@
 package com.ackon.notification;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.WindowManager;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
 	/**
 	 * 노티 화면 띄우기
@@ -33,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getSupportActionBar().hide();
+		getActionBar().hide();
 
 		// 꺼진 화면 화면 켜기
 		getWindow().addFlags(
